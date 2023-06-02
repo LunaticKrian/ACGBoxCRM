@@ -1,0 +1,16 @@
+// 引入reset.scss：
+@import "reset";
+
+// 滚动条样式：
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(240, 240, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(210, 210, 245);
+  border-radius: 10px;
+}
