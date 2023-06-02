@@ -13,11 +13,15 @@ import router from "@/router/index";
 import globalComponents from '@/components/index';
 // 引入仓库：
 import pinia from "@/store";
-// 引入全局样式：
-import '@/style/global.scss';
 // 引入lottie-web：
 import Vue3Lottie from 'vue3-lottie';
 import 'vue3-lottie/dist/style.css';
+
+// 引入全局样式：
+import '@/style/global.scss';
+// 引入暗黑模式的样式：
+import 'element-plus/theme-chalk/dark/css-vars.css'
+
 
 // @ts-ignore
 let app = createApp(App)

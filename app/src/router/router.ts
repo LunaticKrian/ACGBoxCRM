@@ -8,6 +8,7 @@ import random_word from "@/views/openAPI/random_word.vue";
 import error_404 from "@/views/error/error_404.vue";
 import layout from "@/views/layout.vue";
 import about from "@/views/about.vue";
+import chat from "@/views/chat.vue"
 
 export const constantRoute = [
     // 登录路由：
@@ -107,6 +108,23 @@ export const constantRoute = [
                     icon: 'WarnTriangleFilled'
                 }
             },
+        ]
+    },
+    // 聊天室：
+    {
+        path: "/",
+        component: layout,
+        children: [
+            {
+                path: '/chat',
+                component: chat,
+                name: 'chat',
+                meta: {
+                    title: "聊天室",
+                    hidden: false,
+                    icon: 'Comment'
+                }
+            }
         ]
     },
     // 关于我们：

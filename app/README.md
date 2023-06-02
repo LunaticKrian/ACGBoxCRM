@@ -1,4 +1,9 @@
-# ACGBox Vue CRM 
+# <p align="center"> ACGBox Vue CRM 次元世界 </p>
+
+<hr/>
+
+
+
 
 ## 数据大屏解决方案：
 
@@ -13,27 +18,43 @@
 # 项目调试部署：
 
 
-## Project setup
+## 🚀 配置工程环境：
+
+- `Node.js` 版本 18.14.2
+- `@vue/cli` 版本 5.0.8
+- `npm` 版本 9.5.0
+
+进入项目工程目录，注意这是指有 `package.json` 的目录层级。在当前层级目录执行以下指令安装项目运行所需要的依赖包：
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 编译本地运行：
+
+等待 `install` 完成之后，再执行以下命令启动项目。
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 打包部署：
+
+运行以下指令，打包当前工程，发布到生产环境。
+
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 修复：
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<hr/>
+
+## 🚀 其他问题：
+
+如果遇到其他的问题，欢迎大家找到我哟~
 
 

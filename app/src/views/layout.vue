@@ -20,6 +20,11 @@
         <div class="layout-main" :class="{fold:store.fold}">
             <Main></Main>
         </div>
+
+        <!-- 底部页脚 -->
+        <div class="layout-footer" :class="{fold:store.fold}">
+            <Footer></Footer>
+        </div>
     </div>
 </template>
 
@@ -31,6 +36,7 @@ import Menu from '@/components/layout/meun.vue'
 import Tabbar from '@/components/layout/tabbar.vue'
 import Main from "@/components/layout/main.vue";
 import settingStore from "@/store/modules/setting";
+import Footer from "@/components/layout/footer.vue"
 
 let userStore = useUserStore()
 let store = settingStore()
@@ -91,13 +97,27 @@ export default {
     position: absolute;
     // 使用计算方式得到宽度：
     width: calc(100% - $base-menu-width);
-    height: calc(100vh - $base-menu-top-height - $base-menu-top - $base-menu-bottom);
+    height: calc(100vh - $base-menu-top-height - $base-menu-top - $base-menu-bottom - 60px);
     background-color: rgb(255, 255, 255);
     left: $base-menu-width;
     top: calc($base-menu-top-height + $base-menu-top + $base-menu-bottom);
     padding: 20px;
     overflow: auto;
     transition: all 0.4s;
+
+    &.fold {
+      width: calc(100vw - $base-menu-min-width);
+      left: $base-menu-min-width;
+    }
+  }
+
+  .layout-footer {
+    position: fixed;
+    width: calc(100% - $base-menu-width - 40px);
+    left: $base-menu-width;
+    transition: all 0.4s;
+    bottom: 10px;
+    margin: 0 20px;
 
     &.fold {
       width: calc(100vw - $base-menu-min-width);

@@ -1,7 +1,5 @@
 <template>
-    <div>
-        权限管理
-    </div>
+    <el-empty description="当前模块还在建设中哟~" />
 </template>
 
 <script setup lang="ts">
